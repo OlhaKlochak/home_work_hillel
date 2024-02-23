@@ -7,7 +7,7 @@
 
 let quantity = "години, кілометри, кілограми";
 
-let quantityOne = null;
+let quantityOne = 10;
 let quantityTwo = 1;
 let quantityThree=1; 
 
