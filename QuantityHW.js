@@ -28,7 +28,7 @@ switch (quantity) {
 }
 
 console.log(quantityOne+ " км це "+quantityOne * 1000 +" м, "+ quantityTwo+ " год це "+ quantityTwo* 60 + 
-        " хв "+quantityThree+" кг.це "+quantityThree * 1000 +" грм");
+        " хв, "+quantityThree+" кг це "+quantityThree * 1000 +" грм");
 
 }      
  else {
