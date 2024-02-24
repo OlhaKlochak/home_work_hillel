@@ -23,7 +23,7 @@ switch (quantity) {
     case "кілограми":
         console.log(quantityThree+"кг.це"+quantityThree * 1000 +" грм.");
         break;
-    default: "Введена невірна одиниця вимірювання";
+    default: "Введена невідома одиниця вимірювання.";
         
 }
 
@@ -32,5 +32,5 @@ console.log(quantityOne+ " км це "+quantityOne * 1000 +" м, "+ quantityTwo+
 
 }      
  else {
-    console.log("Кількість слід вказати числом.");
+    console.log("Кількість має бути числом.");
 }       
