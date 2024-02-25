@@ -9,7 +9,7 @@ let quantity = "години" // "кілометри" "кілограми";
 
 
 let quantityOne = 10;
-let quantityTwo = 1.5;
+let quantityTwo = 1;
 let quantityThree=1; 
 
 if (typeof quantityOne === "number"&& typeof quantityTwo === "number"&& typeof quantityThree === "number"
