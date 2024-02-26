@@ -5,7 +5,7 @@
 Кілограми в грами
 Зробити вивід отриманої інформації у вигляді - 10 км це 10000 м. 1 г це 60хв. 1 кг. це 1000 грм. */
 
-let quantity = "години" // "кілометри" "кілограми";
+let quantity = "кілометри" //"години кілограми";
 
 
 let quantityOne = 10;
@@ -18,13 +18,13 @@ if (typeof quantityOne === "number"&& typeof quantityTwo === "number"&& typeof q
 switch (quantity) {
     case "кілометри":
         console.log(quantityOne+ "км це"+quantityOne * 1000 +" м.");
-        break;
+        
     case "години":
-        console.log(quantityTwo+ "год. це"+ quantityTwo* 60 + " хв.");
-        break;
+        console.log(quantityTwo+ "год. це "+ quantityTwo* 60 + " хв.");
+        
     case "кілограми":
-        console.log(quantityThree+"кг.це"+quantityThree * 1000 +" грм.");
-        break;
+        console.log(quantityThree+"кг.це "+quantityThree * 1000 +" грм.");
+       break;
         default:
             console.log("Такої одиниці вимірюванн в нас немає))");
             
@@ -35,6 +35,6 @@ console.log(quantityOne+ " км це "+quantityOne * 1000 +" м, "+ quantityTwo+
 
 }      
  else {
-    console.log("Кількість має бути числом.");
+    console.log("Кількість має бути числом, такі правила.");
 }  
 
