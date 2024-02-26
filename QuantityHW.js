@@ -17,13 +17,13 @@ if (typeof quantityOne === "number"&& typeof quantityTwo === "number"&& typeof q
     
 switch (quantity) {
     case "кілометри":
-        console.log(quantityOne+ "км це"+quantityOne * 1000 +" м.");
+        console.log(quantityOne+ "км це "+quantityOne * 1000 +" м.");
         
     case "години":
-        console.log(quantityTwo+ "год. це "+ quantityTwo* 60 + " хв.");
+        console.log(quantityTwo+ "год це "+ quantityTwo* 60 + " хв.");
         
     case "кілограми":
-        console.log(quantityThree+"кг.це "+quantityThree * 1000 +" грм.");
+        console.log(quantityThree+"кг це "+quantityThree * 1000 +" грм.");
        break;
         default:
             console.log("Такої одиниці вимірюванн в нас немає))");
