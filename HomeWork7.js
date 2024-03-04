@@ -1,11 +1,12 @@
 //Task 1
-function whereNun(value){
-    return value!==value &&  value!==value/1;
+function whereNun(maybeNun){
+    return maybeNun!==maybeNun &&  maybeNun!==maybeNun/1;
     }
     console.log(whereNun(NaN));
     console.log(whereNun('123'));
     console.log(whereNun("anv"/0));
     console.log(whereNun('abc'/123));
+    
 
     
     
