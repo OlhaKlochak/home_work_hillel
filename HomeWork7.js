@@ -1,6 +1,6 @@
 //Task 1
-function whereNun(maybeNun){
-    return maybeNun!==maybeNun &&  maybeNun!==maybeNun/1;
+function whereNun(maybeNan){
+    return maybeNan!==maybeNan &&  maybeNan!==maybeNan/1;
     }
     console.log(whereNun(NaN));
     console.log(whereNun('123'));
