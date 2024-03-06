@@ -27,32 +27,36 @@ var services = {
     "Миття голови": "100 грн",
     price: function() {
         var totalPrice = 0;
-        for (var service in this) {
-            if (typeof this[service] === 'string') {
-                var priceValue = Number(this[service].substring(0, this[service].length - 4));
+        for (var key in this) {
+            if (typeof this[key] !== 'function') {
+                var priceValue = Number(this [key].substring(0, this[key].length - 4));
                 totalPrice += priceValue;
             }
         }
+        
         return totalPrice;
     },
     minPrice: function() {
-        var prices = Object.values(this).filter(value => typeof value === 'string');
         var minPrice = Infinity;
-        for (var i = 0; i < prices.length; i++) {
-            var priceValue = Number(prices[i].substring(0, prices[i].length - 4));
-            if (priceValue < minPrice) {
-                minPrice = priceValue;
+        for (var key in this) {
+            if (typeof this[key] !== 'function') {
+                var priceValue = Number(this [key].substring(0, this[key].length - 4));
+                if (priceValue < minPrice) {
+                    minPrice = priceValue;
+                }
             }
         }
         return minPrice;
     },
     maxPrice: function() {
-        var prices = Object.values(this).filter(value => typeof value === 'string');
+        
         var maxPrice = -Infinity;
-        for (var i = 0; i < prices.length; i++) {
-            var priceValue = Number(prices[i].substring(0, prices[i].length - 4));
-            if (priceValue > maxPrice) {
-                maxPrice = priceValue;
+        for (var key in this) {
+            if (typeof this[key] !== 'function') {
+                var priceValue = Number(this [key].substring(0, this[key].length - 4));
+                if (priceValue > maxPrice) {
+                   maxPrice = priceValue;
+                }
             }
         }
         return maxPrice;
