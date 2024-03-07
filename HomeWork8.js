@@ -37,7 +37,7 @@ var services = {
         return totalPrice;
     },
     minPrice: function() {
-        var minPrice = Infinity;
+        var minPrice = 10000;
         for (var key in this) {
             if (typeof this[key] !== 'function') {
                 var priceValue = Number(this [key].substring(0, this[key].length - 4));
@@ -50,7 +50,7 @@ var services = {
     },
     maxPrice: function() {
         
-        var maxPrice = -Infinity;
+        var maxPrice = 0;
         for (var key in this) {
             if (typeof this[key] !== 'function') {
                 var priceValue = Number(this [key].substring(0, this[key].length - 4));
