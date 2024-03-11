@@ -51,26 +51,20 @@ const company = {
         }
     ]
 }
-
-
 function findValueByKey(companyName, arr) {
-    // Шукаємо в основному списку клієнтів
     for ( client of arr.clients) {
         if (client.name === companyName) {
             return client;
         }
-        // Якщо у клієнта є партнери, шукаємо рекурсивно серед них
-        if (client.partners && client.partners.length > 0) {
+       if (client.partners && client.partners.length > 0) {
              check = findValueByKey(companyName, {clients: client.partners});
             if (check) {
                 return check;
             }
-        }
+       }
     }
-    // Якщо компанія не знайдена
     return null;
 }
+console.log(findValueByKey('Клієнт 1',company));
 
 
-const foundCompany = findValueByKey('Клієнт 1.2.3',company);
-console.log(foundCompany);
