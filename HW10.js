@@ -1,5 +1,5 @@
 // Task 1
-var str='aaaaaa';
+var str='aaaadddddddfffffaa';
 var regEx=/^(?!.*[Аа]).{6,}$/;
 console.log(regEx.test(str));
 
@@ -26,7 +26,9 @@ var arr = [
 const emailRegex = /^[a-zA-Z0-9]+([.-]?[a-zA-Z0-9]+)*@(gmail\.com|yahoo\.com)$/;
 
 const trustedEmails = arr.filter(item => {
-    return emailRegex.test(item.email);
-});
 
-console.log(trustedEmails);
+    return emailRegex.test(item.email)
+ 
+ }).map(item=>item.email);;
+ 
+ console.log(trustedEmails);
