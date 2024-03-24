@@ -1,6 +1,6 @@
 // Task 1
 var str='aaaadddddddfffffaa';
-var regEx=/^(?!.*[Аа]).{6,}$/;
+var regEx = /^(?:(?![Аа]).){6,}$/;
 console.log(regEx.test(str));
 
 
