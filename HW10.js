@@ -1,10 +1,15 @@
 // Task 1
 var str='aaaadddddddfffffaa';
-var regEx = /^(?:(?![Аа]).){6,}$/;
+var regEx = /[^Аа]{6}/gi;
 console.log(regEx.test(str));
 
 
+var str = "Тут написано якийсь тект для того, щоб знайти принаймні шість літер які не містять літеру А чи а";
+var re = /^(?:[^Aa]*[^\s]){6,}$/
 
+console.log(typeof re);
+console.log(str.search(re));
+console.log(re.test(str));
 // Task 2
 var arr = [
     {
