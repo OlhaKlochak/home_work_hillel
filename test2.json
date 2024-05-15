@@ -1,0 +1,21 @@
+[{
+    "carBrandId":1,
+    "data": {
+        "name": "somethingTest",
+        "lastName":"TestFirstSomthng",
+        "email":"somethigntsts@gmail.com",
+        "password": "Test1223455",
+        "repeatPassword": "Test1223455"
+    }
+
+},{
+    "carBrandId":2,
+    "data": {
+        "name": "somethingTestTnew",
+        "lastName":"TestFirstSomthngTnew",
+        "email":"somethigntstsTnew@gmail.com",
+        "password": "Test1223455T",
+        "repeatPassword": "Test1223455T"
+    }
+}
+]
