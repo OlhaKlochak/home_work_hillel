@@ -1,9 +1,9 @@
 [{
     "carBrandId":1,
     "data": {
-        "name": "somethinuttesttesto",
-        "lastName":"Testrrgthngwwwo",
-        "email":"somethiffstporr@gmail.com",
+        "name": "sometnuttesttesto",
+        "lastName":"Testrehngwwwo",
+        "email":"somethiffstpou@gmail.com",
         "password": "Test1223455",
         "repeatPassword": "Test1223455"
     }
@@ -11,9 +11,9 @@
 },{
     "carBrandId":2,
     "data": {
-        "name": "somethinguemtTnewo",
-        "lastName":"TestFustkomthngTnewo",
-        "email":"somethigninow@gmail.com",
+        "name": "sorhinguemtTnewo",
+        "lastName":"TestetkomthngTnewo",
+        "email":"somethignii@gmail.com",
         "password": "Test1223455T",
         "repeatPassword": "Test1223455T"
     }
