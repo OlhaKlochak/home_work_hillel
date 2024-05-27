@@ -51,20 +51,31 @@ const company = {
         }
     ]
 }
-function findValueByKey(companyName, arr) {
-    for ( client of arr.clients) {
-        if (client.name === companyName) {
-            return client;
+function printObj(result){
+    for(let key in result){
+        if (key!=="clients"&& key !=="partners"){
+            console.log(key+" : "+result[key]);
         }
-       if (client.partners && client.partners.length > 0) {
-             check = findValueByKey(companyName, {clients: client.partners});
-            if (check) {
-                return check;
-            }
-       }
     }
-    return null;
 }
-console.log(findValueByKey('Клієнт 1',company));
+function findValueByKey(companyName, currentObject) {
+    if(currentObject.name==companyName)
+        return printObj(currentObject)
+    if (currentObject.clients){
+        for(var i =0; i<currentObject.clients.length;i++){
+            var result=findValueByKey(companyName, currentObject.clients[i]);
+            if(result)
+                return printObj(result)
+        }
+    }
+    if (currentObject.partners){
+        for(var i=0; i<currentObject.partners.length; i++){
+            var result=findValueByKey(companyName, currentObject.partners[i]);
+            if(result)
+                return printObj(result)
+        }
+    }
+}
+console.log(findValueByKey('Клієнт 1.2.3',company));
 
 
