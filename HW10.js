@@ -1,7 +1,7 @@
 // Task 1
-var str='aaaadddddddfffffaa';
-var regEx = /[^Аа]{6}/gi;
-console.log(regEx.test(str));
+const str="qwErtytgGbafggfffviaaa";
+const regEx = /[^Aа]{6}/gi;
+console.log(str.match(regEx));
 
 
 var str = "Тут написано якийсь тект для того, щоб знайти принаймні шість літер які не містять літеру А чи а";
