@@ -11,20 +11,14 @@ function whereNun(maybeNan){
     
     
 //Task 2
-function pad(text, simbol, quantity,beginadd){
-    if (quantity<=0){
-        return text;
+function padFirst(text, simbol, quantity,beginadd){
+    let symbolsToAdd=quantity-text.length;
+    return((symbolsToAdd>0)?(beginadd ? simbol.repeat(symbolsToAdd)+text:text+simbol.repeat(symbolsToAdd)):text)
     }
-    let padEndpadStart = simbol.repeat(quantity);
-    if (beginadd) {
-        return padEndpadStart + text;
-    } else {
-        return text + padEndpadStart;
-    }
-}
-console.log(pad('qwerty', '+', 5, true)); 
-console.log(pad('qwerty', '+', 1, false)); 
-console.log(pad('qwerty', '+', 1, false)); 
+    
+console.log(padFirst('qwerty', '+', 12, true)); 
+console.log(padFirst('qwerty', '+', 8, false)); 
+console.log(padFirst('qwerty', '+', 1, false)); 
 
 
 //Task 3
